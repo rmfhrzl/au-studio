@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+.vite
+*.local
+.DS_Store
+coverage
+*.log
+tsconfig.tsbuildinfo
+au-studio-deploy.zip
+.vercel
+tmp/
+dist-story/
+dist-player/

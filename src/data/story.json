@@ -1,0 +1,1194 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "id": "sinyal-terakhir",
+    "title": "Sinyal Terakhir",
+    "description": "Naya dan Bagas mengerjakan pameran foto untuk kampus kecil mereka. Satu file hilang, satu telepon tak dijawab, dan malam pembukaan yang tak boleh gagal.",
+    "author": "AU Studio",
+    "defaultLocale": "id",
+    "startNodeId": "start",
+    "status": "published",
+    "createdAt": "2026-10-12T09:00:00.000Z",
+    "updatedAt": "2026-10-21T06:40:00.000Z",
+    "version": 1
+  },
+  "device": {
+    "ownerName": "Naya Adira",
+    "wallpaper": "grad:#3b3f7a,#0b0b18",
+    "accent": "#6f8cff",
+    "passcode": null,
+    "storyStartAt": "2026-10-21T07:17:00",
+    "notificationsEnabled": true,
+    "soundEnabled": true
+  },
+  "settings": {
+    "maxPostLength": 280,
+    "callTimeoutSeconds": 30,
+    "captionIntervalMs": 2600,
+    "typingSpeedMs": 45,
+    "minutesPerSecond": 1
+  },
+  "characters": [
+    {
+      "id": "naya",
+      "name": "Naya Adira",
+      "role": "player",
+      "handle": "nayaadira",
+      "bio": "DKV semester 5. Kebiasaan memotret hal yang paling biasa.",
+      "color": "#f4736b",
+      "isPlayer": true
+    },
+    {
+      "id": "bagas",
+      "name": "Bagas Wirawan",
+      "role": "main",
+      "handle": "bagaswir",
+      "bio": "Informatika semester 5. Suka membangun hal yang rusak jam dua pagi.",
+      "color": "#4f8cff",
+      "isPlayer": false
+    },
+    {
+      "id": "dimas",
+      "name": "Dimas Prakoso",
+      "role": "contact",
+      "handle": "dimas_builds",
+      "bio": "Ketua tim. Semua masalah disalahkan pada cloud.",
+      "color": "#34c88a",
+      "isPlayer": false
+    },
+    {
+      "id": "lala",
+      "name": "Lala Puspita",
+      "role": "contact",
+      "handle": "lala.panitia",
+      "bio": "Panitia pameran. Menjadwalkan segalanya.",
+      "color": "#f5a524",
+      "isPlayer": false
+    },
+    {
+      "id": "ibu",
+      "name": "Ibu Rina",
+      "role": "contact",
+      "handle": "ibu_rina",
+      "bio": "Bertanya jam pulang sejak 2019.",
+      "color": "#a78bfa",
+      "isPlayer": false
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c-bagas",
+      "characterId": "bagas",
+      "name": "Bagas",
+      "phoneNumber": "0812-3344-9090",
+      "status": "di studio garasi",
+      "pinned": true,
+      "unread": 2
+    },
+    {
+      "id": "c-dimas",
+      "characterId": "dimas",
+      "name": "Dimas",
+      "phoneNumber": "0813-2211-7788",
+      "status": "online",
+      "pinned": false,
+      "unread": 0
+    },
+    {
+      "id": "c-lala",
+      "characterId": "lala",
+      "name": "Lala Panitia",
+      "phoneNumber": "0815-6620-1144",
+      "status": "di gd geprek",
+      "pinned": false,
+      "unread": 1
+    },
+    {
+      "id": "c-ibu",
+      "characterId": "ibu",
+      "name": "Ibu",
+      "phoneNumber": "0812-0000-1212",
+      "status": "",
+      "pinned": true,
+      "unread": 0
+    }
+  ],
+  "variables": [
+    {
+      "id": "kejujuran",
+      "label": "Kejujuran",
+      "type": "number",
+      "initial": 1,
+      "description": "Seberapa jujur Naya pada Bagas dan tim panitia."
+    },
+    {
+      "id": "kepercayaan",
+      "label": "Kepercayaan",
+      "type": "number",
+      "initial": 1,
+      "description": "Seberapa jauh tim masih percaya pada Naya."
+    },
+    {
+      "id": "kedekatan",
+      "label": "Kedekatan",
+      "type": "number",
+      "initial": 0,
+      "description": "Kedekatan Naya dan Bagas."
+    },
+    {
+      "id": "ambisi",
+      "label": "Ambisi",
+      "type": "number",
+      "initial": 0,
+      "description": "Dorongan Naya untuk mengambil alih proyek."
+    }
+  ],
+  "endings": [
+    {
+      "id": "ending-bersama",
+      "title": "Kursi Kosong yang Terisi",
+      "summary": "Naya mengerjakan semuanya dengan jujur, dan pameran berjalan tanpa adegan yang perlu disesali.",
+      "epilogue": "Jam sembilan malam, Bagas berdiri di depan layar yang menampilkan foto paling sunyi. \"Ini yang paling susah, ya?\" \"Iya. Karena ini yang asli.\" Pameran selesai tanpa revisi最后一次, dan itu hal yang jarang terjadi.",
+      "kind": "happy"
+    },
+    {
+      "id": "ending-archive",
+      "title": "Arsip yang Tetap Tertata",
+      "summary": "Pameran berjalan rapi. Tidak ada yang rusak, tidak ada yang dekat juga.",
+      "epilogue": "Exhibit dibuka, tamu datang, foto-fotonya dipuji. Naya pulang lebih awal karena ada yang harus dikerjakan besok. Beberapa hal tetap profesional, dan itu bukan tragedi.",
+      "kind": "neutral"
+    },
+    {
+      "id": "ending-sendiri",
+      "title": "Nilai Sendiri",
+      "summary": "Naya menyelesaikan pameran, tetapi ruang yang tersisa di pelantarnya terasa lebih besar dari seharusnya.",
+      "epilogue": "Pameran sukses. Kredit diberikan ke tim, dan nama Naya tercetak, tapi dengan font yang lebih kecil. Dia tidak mengeluh. Dia cuma berhenti berharap ada balasan.",
+      "kind": "sad"
+    },
+    {
+      "id": "ending-gugur",
+      "title": "Exhibit yang Gugur",
+      "summary": "Lala menutup pintu gd geprek lebih awal. Setengah dinding tetap kosong, dan tidak ada yang minta maaf.",
+      "epilogue": "Pameran ditunda. Tidak ada yang mempermalukan siapa pun, tapi juga tidak ada yang tersisa. Dinding kosong itu tetap kosong.",
+      "kind": "failure"
+    },
+    {
+      "id": "ending-rahasia",
+      "title": "Kunci di Atas Meja",
+      "summary": "Ending tersembunyi: Naya mendengarkan, menjawab teleponnya, dan menemukan apa yang sebenarnya terjadi pada file yang hilang.",
+      "epilogue": "Bagas tidak menuduh siapa pun. Dia hanya bilang bahwa filenya tidak pernah hilang, karena memang tidak pernah diunggah: ada yang tidak percaya server dengan salinan terakhir. \"Aku titip ke kamu,\" katanya. Dan Naya melakukan hal yang paling benar: menyimpan salinan sendiri, seperti yang selalu ia lakukan.",
+      "kind": "secret"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start",
+      "title": "Mulai",
+      "meta": { "x": 0, "y": 0 },
+      "nextNodeId": "b1-sore"
+    },
+    {
+      "id": "b1-sore",
+      "type": "dialogue",
+      "title": "Pesan sore",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 120 },
+      "lines": [
+        {
+          "id": "l-b1-1",
+          "characterId": "bagas",
+          "text": "kamu masih di kampus?",
+          "delayMs": 400,
+          "typingMs": 900
+        },
+        {
+          "id": "l-b1-2",
+          "characterId": "bagas",
+          "text": "gue baru sadar file Exhibit B belum naik. slide terakhir masih kosong di drive",
+          "delayMs": 1400,
+          "typingMs": 1600
+        },
+        {
+          "id": "l-b1-3",
+          "characterId": "bagas",
+          "text": "bisa cek sekalian? galerinya buka jam 7 malam, aku masih di garasi",
+          "delayMs": 1200,
+          "typingMs": 1400
+        }
+      ],
+      "nextNodeId": "b1-pilihan"
+    },
+    {
+      "id": "b1-pilihan",
+      "type": "choice",
+      "title": "Balasan pertama",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 260 },
+      "prompt": "Naya harus menjawab Bagas.",
+      "options": [
+        {
+          "id": "o-b1-datang",
+          "text": "gue cek sekarang. kalau emang hilang, salah gue yang gantiin.",
+          "keywords": ["cek sekarang", "salah gue", "gantiin"],
+          "effects": [
+            { "id": "e-b1-1", "variableId": "kejujuran", "op": "add", "value": 1 },
+            { "id": "e-b1-2", "variableId": "kepercayaan", "op": "add", "value": 1 }
+          ],
+          "nextNodeId": "b1-setelah-datang"
+        },
+        {
+          "id": "o-b1-diam",
+          "text": "bisik ya. gue transfer dulu, biar semua tetap sama.",
+          "keywords": ["transfer", "bisik", "tetap sama"],
+          "effects": [
+            { "id": "e-b1-3", "variableId": "kepercayaan", "op": "add", "value": 1 }
+          ],
+          "nextNodeId": "b1-setelah-diam"
+        },
+        {
+          "id": "o-b1-curiga",
+          "text": "file jam 2 pagi terus hilang? siapa yang nyimpen salinan?",
+          "keywords": ["jam 2 pagi", "salinan", "siapa"],
+          "effects": [
+            { "id": "e-b1-4", "variableId": "kejujuran", "op": "subtract", "value": 1 },
+            { "id": "e-b1-5", "variableId": "kepercayaan", "op": "subtract", "value": 1 },
+            { "id": "e-b1-6", "variableId": "ambisi", "op": "add", "value": 1 }
+          ],
+          "nextNodeId": "b1-setelah-curiga"
+        }
+      ]
+    },
+    {
+      "id": "b1-setelah-datang",
+      "type": "dialogue",
+      "title": "Setelah menepati janji",
+      "chatId": "chat-bagas",
+      "meta": { "x": -260, "y": 420 },
+      "lines": [
+        {
+          "id": "l-b1d-1",
+          "characterId": "bagas",
+          "text": "oke. kalau emang gitu, gue backup yang lain dulu",
+          "delayMs": 900,
+          "typingMs": 1100
+        },
+        {
+          "id": "l-b1d-2",
+          "characterId": "bagas",
+          "text": "makasih udah nyusul. biasanya orang di sini cuma cc aja",
+          "delayMs": 1200,
+          "typingMs": 1300
+        }
+      ],
+      "nextNodeId": "post-node"
+    },
+    {
+      "id": "b1-setelah-diam",
+      "type": "dialogue",
+      "title": "Setelah bisikan",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 420 },
+      "lines": [
+        {
+          "id": "l-b1s-1",
+          "characterId": "bagas",
+          "text": "sip. gue tunggu di garasi ya",
+          "delayMs": 900,
+          "typingMs": 1000
+        },
+        {
+          "id": "l-b1s-2",
+          "characterId": "bagas",
+          "text": "btw Exhibit B itu punyemu ya. cuma satu slot",
+          "delayMs": 1300,
+          "typingMs": 1200
+        }
+      ],
+      "nextNodeId": "post-node"
+    },
+    {
+      "id": "b1-setelah-curiga",
+      "type": "dialogue",
+      "title": "Setelah curiga",
+      "chatId": "chat-bagas",
+      "meta": { "x": 260, "y": 420 },
+      "lines": [
+        {
+          "id": "l-b1c-1",
+          "characterId": "bagas",
+          "text": "...",
+          "delayMs": 1200,
+          "typingMs": 600
+        },
+        {
+          "id": "l-b1c-2",
+          "characterId": "bagas",
+          "text": "ga ada salinan. ya udah, cek aja",
+          "delayMs": 900,
+          "typingMs": 1000
+        }
+      ],
+      "nextNodeId": "post-node"
+    },
+    {
+      "id": "post-node",
+      "type": "socialPost",
+      "title": "Postingan Bagas",
+      "postId": "post-bagas-1",
+      "meta": { "x": 0, "y": 580 },
+      "nextNodeId": "b2-panitia"
+    },
+    {
+      "id": "b2-panitia",
+      "type": "dialogue",
+      "title": "Grup panitia",
+      "chatId": "chat-team",
+      "meta": { "x": 0, "y": 720 },
+      "lines": [
+        {
+          "id": "l-b2-1",
+          "characterId": "dimas",
+          "text": "PESTOL! final set Exhibit B mana ya",
+          "delayMs": 500,
+          "typingMs": 900
+        },
+        {
+          "id": "l-b2-2",
+          "characterId": "lala",
+          "text": "Final set harus masuk ke gd geprek sebelum jam 15.00 ya. timnya tidak boleh molor.",
+          "delayMs": 1200,
+          "typingMs": 1500
+        },
+        {
+          "id": "l-b2-3",
+          "characterId": "dimas",
+          "text": "kita jangan panik dulu. cloud-nya belum selesai sinkron, kan?",
+          "delayMs": 1100,
+          "typingMs": 1300
+        }
+      ],
+      "nextNodeId": "b2-pilihan"
+    },
+    {
+      "id": "b2-pilihan",
+      "type": "choice",
+      "title": "Di grup panitia",
+      "chatId": "chat-team",
+      "meta": { "x": 0, "y": 860 },
+      "prompt": "Semua orang menunggu jawaban di grup.",
+      "options": [
+        {
+          "id": "o-b2-jujur",
+          "text": "File Exhibit B belum naik. Aku yang handle, tanggung ke gue.",
+          "keywords": ["belum naik", "tanggung ke gue", "aku yang handle"],
+          "effects": [
+            { "id": "e-b2-1", "variableId": "kejujuran", "op": "add", "value": 2 },
+            { "id": "e-b2-2", "variableId": "kepercayaan", "op": "subtract", "value": 1 }
+          ],
+          "nextNodeId": "b2-setelah-jujur"
+        },
+        {
+          "id": "o-b2-diam",
+          "text": "Wait, cloud lagi lemot. Aku cek lagi ya.",
+          "keywords": ["cloud lagi lemot", "cek lagi", "wait"],
+          "effects": [
+            { "id": "e-b2-3", "variableId": "ambisi", "op": "add", "value": 1 },
+            { "id": "e-b2-4", "variableId": "kejujuran", "op": "subtract", "value": 1 }
+          ],
+          "nextNodeId": "b2-setelah-diam"
+        },
+        {
+          "id": "o-b2-balas",
+          "text": "Kayaknya masalahnya di drive Dimas. Aku cek drive dia dulu deh.",
+          "keywords": ["drive dimas", "cek drive", "masalahnya di drive"],
+          "effects": [
+            { "id": "e-b2-5", "variableId": "kejujuran", "op": "subtract", "value": 2 },
+            { "id": "e-b2-6", "variableId": "kepercayaan", "op": "subtract", "value": 2 }
+          ],
+          "nextNodeId": "b2-setelah-balas"
+        }
+      ]
+    },
+    {
+      "id": "b2-setelah-jujur",
+      "type": "dialogue",
+      "title": "Setelah mengakui",
+      "chatId": "chat-team",
+      "meta": { "x": -260, "y": 1000 },
+      "lines": [
+        {
+          "id": "l-b2j-1",
+          "characterId": "dimas",
+          "text": "WKWKWK baru kali cewek jujur duluan",
+          "delayMs": 900,
+          "typingMs": 1000
+        },
+        {
+          "id": "l-b2j-2",
+          "characterId": "lala",
+          "text": "Nah gitu dong. Aku tunggu di gd geprek ya, bring yang cadangan",
+          "delayMs": 1200,
+          "typingMs": 1400
+        }
+      ],
+      "nextNodeId": "b3-malam"
+    },
+    {
+      "id": "b2-setelah-diam",
+      "type": "dialogue",
+      "title": "Setelah menunda",
+      "chatId": "chat-team",
+      "meta": { "x": 0, "y": 1000 },
+      "lines": [
+        {
+          "id": "l-b2d-1",
+          "characterId": "dimas",
+          "text": "ah pasti cloud. kayak gitu lah",
+          "delayMs": 900,
+          "typingMs": 1000
+        },
+        {
+          "id": "l-b2d-2",
+          "characterId": "lala",
+          "text": "Jam 15 ya. Aku ga bisa menunggu selamanya.",
+          "delayMs": 1200,
+          "typingMs": 1300
+        }
+      ],
+      "nextNodeId": "b3-malam"
+    },
+    {
+      "id": "b2-setelah-balas",
+      "type": "dialogue",
+      "title": "Setelah menyalahkan",
+      "chatId": "chat-team",
+      "meta": { "x": 260, "y": 1000 },
+      "lines": [
+        {
+          "id": "l-b2b-1",
+          "characterId": "dimas",
+          "text": "HA? drive gue mah aman, cek aja",
+          "delayMs": 900,
+          "typingMs": 1000
+        },
+        {
+          "id": "l-b2b-2",
+          "characterId": "dimas",
+          "text": "ya udah aku cek. satu-satu-satu",
+          "delayMs": 1000,
+          "typingMs": 1100
+        }
+      ],
+      "nextNodeId": "b3-malam"
+    },
+    {
+      "id": "b3-malam",
+      "type": "dialogue",
+      "title": "Setelah exhibit",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 1140 },
+      "lines": [
+        {
+          "id": "l-b3-1",
+          "characterId": "bagas",
+          "text": "gue mau jujur soal satu hal",
+          "delayMs": 1200,
+          "typingMs": 1200
+        },
+        {
+          "id": "l-b3-2",
+          "characterId": "bagas",
+          "text": "jam 2 pagi itu bukan gue yang upload Exhibit B. tapi bukan juga gue yang hapus",
+          "delayMs": 1500,
+          "typingMs": 1800
+        },
+        {
+          "id": "l-b3-3",
+          "characterId": "bagas",
+          "text": "kenapa gue belum bilang? karena proyek ini satu-satunya yang paling serius kita punya",
+          "delayMs": 1600,
+          "typingMs": 1900
+        }
+      ],
+      "nextNodeId": "b3-pilihan"
+    },
+    {
+      "id": "b3-pilihan",
+      "type": "choice",
+      "title": "Jawab Bagas",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 1280 },
+      "prompt": "Bagas sedang menunggu.",
+      "options": [
+        {
+          "id": "o-b3-dengar",
+          "text": "dengerin aja. aku dengerin sampe habis.",
+          "keywords": ["dengerin", "sampe habis", "dengerin aja"],
+          "effects": [
+            { "id": "e-b3-1", "variableId": "kedekatan", "op": "add", "value": 2 }
+          ],
+          "nextNodeId": "b3-setelah-dengar"
+        },
+        {
+          "id": "o-b3-tunda",
+          "text": "besok ya. aku capek, dan exhibit-nya besok.",
+          "keywords": ["besok ya", "capek", "exhibit-nya besok"],
+          "effects": [
+            { "id": "e-b3-2", "variableId": "kedekatan", "op": "add", "value": 1 },
+            { "id": "e-b3-3", "variableId": "kepercayaan", "op": "add", "value": 1 }
+          ],
+          "nextNodeId": "b3-setelah-tunda"
+        },
+        {
+          "id": "o-b3-tutup",
+          "text": "ya udah dibahas di grup saja. chat pribadi bukan tempatnya.",
+          "keywords": ["di grup saja", "bukan tempatnya", "ya udah dibahas"],
+          "effects": [
+            { "id": "e-b3-4", "variableId": "kedekatan", "op": "subtract", "value": 1 }
+          ],
+          "nextNodeId": "b3-setelah-tutup"
+        }
+      ]
+    },
+    {
+      "id": "b3-setelah-dengar",
+      "type": "dialogue",
+      "title": "Setelah mendengarkan",
+      "chatId": "chat-bagas",
+      "meta": { "x": -260, "y": 1420 },
+      "lines": [
+        {
+          "id": "l-b3d-1",
+          "characterId": "bagas",
+          "text": "makasih. serius, makasih",
+          "delayMs": 1200,
+          "typingMs": 1300
+        },
+        {
+          "id": "l-b3d-2",
+          "characterId": "bagas",
+          "text": "besok pagi aku bawa hard disk. jadi tenang aja",
+          "delayMs": 1400,
+          "typingMs": 1500
+        }
+      ],
+      "nextNodeId": "call-node"
+    },
+    {
+      "id": "b3-setelah-tunda",
+      "type": "dialogue",
+      "title": "Setelah menunda",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 1420 },
+      "lines": [
+        {
+          "id": "l-b3t-1",
+          "characterId": "bagas",
+          "text": "ya. besok. kamu juga jangan begadang",
+          "delayMs": 1200,
+          "typingMs": 1300
+        },
+        {
+          "id": "l-b3t-2",
+          "characterId": "bagas",
+          "text": "oh iya. besok pagi kita spoke jam 9 sama lala ya",
+          "delayMs": 1400,
+          "typingMs": 1500
+        }
+      ],
+      "nextNodeId": "call-node"
+    },
+    {
+      "id": "b3-setelah-tutup",
+      "type": "dialogue",
+      "title": "Setelah menutup",
+      "chatId": "chat-bagas",
+      "meta": { "x": 260, "y": 1420 },
+      "lines": [
+        {
+          "id": "l-b3k-1",
+          "characterId": "bagas",
+          "text": "ok",
+          "delayMs": 1400,
+          "typingMs": 700
+        },
+        {
+          "id": "l-b3k-2",
+          "characterId": "bagas",
+          "text": "makasih udah jawab. good luck besok",
+          "delayMs": 1200,
+          "typingMs": 1300
+        }
+      ],
+      "nextNodeId": "call-node"
+    },
+    {
+      "id": "call-node",
+      "type": "incomingCall",
+      "title": "Telepon larut",
+      "callId": "call-bagas-malam",
+      "meta": { "x": 0, "y": 1560 },
+      "onDeclineNodeId": "call-ditolak",
+      "onMissedNodeId": "call-terlewat",
+      "nextNodeId": "call-diterima"
+    },
+    {
+      "id": "call-diterima",
+      "type": "dialogue",
+      "title": "Setelah telepon",
+      "chatId": "chat-bagas",
+      "meta": { "x": -260, "y": 1700 },
+      "lines": [
+        {
+          "id": "l-call-1",
+          "characterId": "bagas",
+          "text": "makasih udah jawab. ini buat besok aja, males ngetik",
+          "delayMs": 1200,
+          "typingMs": 1400
+        },
+        {
+          "id": "l-call-2",
+          "characterId": "bagas",
+          "text": "sampai besok. jangan lupa tidur",
+          "delayMs": 1600,
+          "typingMs": 1500
+        }
+      ],
+      "nextNodeId": "akhir-kondisi"
+    },
+    {
+      "id": "call-ditolak",
+      "type": "dialogue",
+      "title": "Setelah ditolak",
+      "chatId": "chat-bagas",
+      "meta": { "x": 0, "y": 1700 },
+      "lines": [
+        {
+          "id": "l-call-3",
+          "characterId": "bagas",
+          "text": "oke. ga apa-apa. good luck besok",
+          "delayMs": 1600,
+          "typingMs": 1500
+        }
+      ],
+      "nextNodeId": "akhir-kondisi"
+    },
+    {
+      "id": "call-terlewat",
+      "type": "dialogue",
+      "title": "Setelah terlewat",
+      "chatId": "chat-bagas",
+      "meta": { "x": 260, "y": 1700 },
+      "lines": [
+        {
+          "id": "l-call-4",
+          "characterId": "bagas",
+          "text": "eh, sorry jam segini. nothing urgent kok, besok aja",
+          "delayMs": 1800,
+          "typingMs": 1600
+        }
+      ],
+      "nextNodeId": "akhir-kondisi"
+    },
+    {
+      "id": "akhir-kondisi",
+      "type": "conditional",
+      "title": "Penentuan ending",
+      "meta": { "x": 0, "y": 1840 },
+      "branches": [
+        {
+          "id": "br-rahasia",
+          "label": "Jujur dan menjawab telepon",
+          "condition": {
+            "kind": "all",
+            "conditions": [
+              { "kind": "var", "variableId": "kejujuran", "op": "gte", "value": 3 },
+              { "kind": "flag", "flag": "answeredCall", "value": true }
+            ]
+          },
+          "nextNodeId": "ending-rahasia"
+        },
+        {
+          "id": "br-bersama",
+          "label": "Jujur",
+          "condition": { "kind": "var", "variableId": "kejujuran", "op": "gte", "value": 2 },
+          "nextNodeId": "ending-bersama"
+        },
+        {
+          "id": "br-arsip",
+          "label": "Kepercayaan terjaga",
+          "condition": {
+            "kind": "var",
+            "variableId": "kepercayaan",
+            "op": "gte",
+            "value": 2
+          },
+          "nextNodeId": "ending-archive"
+        },
+        {
+          "id": "br-sendiri",
+          "label": "Terburu-buru dan ambisius",
+          "condition": {
+            "kind": "all",
+            "conditions": [
+              { "kind": "var", "variableId": "kejujuran", "op": "lte", "value": 0 },
+              { "kind": "var", "variableId": "ambisi", "op": "gte", "value": 1 }
+            ]
+          },
+          "nextNodeId": "ending-sendiri"
+        }
+      ],
+      "fallbackNodeId": "ending-gugur"
+    },
+    {
+      "id": "ending-bersama",
+      "type": "ending",
+      "title": "Ending: Kursi Kosong yang Terisi",
+      "endingId": "ending-bersama",
+      "meta": { "x": -360, "y": 1980 }
+    },
+    {
+      "id": "ending-archive",
+      "type": "ending",
+      "title": "Ending: Arsip yang Tetap Tertata",
+      "endingId": "ending-archive",
+      "meta": { "x": -120, "y": 1980 }
+    },
+    {
+      "id": "ending-sendiri",
+      "type": "ending",
+      "title": "Ending: Nilai Sendiri",
+      "endingId": "ending-sendiri",
+      "meta": { "x": 120, "y": 1980 }
+    },
+    {
+      "id": "ending-gugur",
+      "type": "failureEnding",
+      "title": "Ending: Exhibit yang Gugur",
+      "endingId": "ending-gugur",
+      "meta": { "x": 360, "y": 1980 }
+    },
+    {
+      "id": "ending-rahasia",
+      "type": "ending",
+      "title": "Ending: Kunci di Atas Meja",
+      "endingId": "ending-rahasia",
+      "meta": { "x": 0, "y": 2120 }
+    }
+  ],
+  "chats": [
+    {
+      "id": "chat-bagas",
+      "contactId": "c-bagas",
+      "title": "Bagas",
+      "messages": [
+        { "id": "h1", "author": "bagas", "text": "kamu udah ngecek slot Exhibit B di server?", "time": "Sen 20:12", "read": true },
+        { "id": "h2", "author": "naya", "text": "belum, baru pulang", "time": "Sen 20:19", "read": true },
+        { "id": "h3", "author": "bagas", "text": "yaudah aku cek. btw ternyata sistemnya lagi dikunci", "time": "Sen 20:20", "read": true },
+        { "id": "h4", "author": "naya", "text": "kapan-kapan dibenerin ya", "time": "Sen 20:21", "read": true },
+        { "id": "h5", "author": "bagas", "text": "udah dibenerin. sekarang udah Tested", "time": "Sel 08:03", "read": true },
+        { "id": "h6", "author": "naya", "text": "makasih! aku upload semua yang Exhibit A tadi", "time": "Sel 08:41", "read": true },
+        { "id": "h7", "author": "bagas", "text": "okok", "time": "Sel 08:42", "read": true },
+        { "id": "h8", "author": "naya", "text": "kamu jadi foto atau coding lagi?", "time": "Rab 19:55", "read": true },
+        { "id": "h9", "author": "bagas", "text": "koding. yang bikin miskonfigurasi", "time": "Rab 19:57", "read": true },
+        { "id": "h10", "author": "naya", "text": "semoga exhibit ini selesai sesuai jadwal", "time": "Rab 19:58", "read": true },
+        { "id": "h11", "author": "bagas", "text": "amin. lala udah minta slot kita jam 7 malam ya", "time": "Kam 14:02", "read": true },
+        { "id": "h12", "author": "naya", "text": "jam 7? exhibit kita 40 menit aja", "time": "Kam 14:10", "read": true },
+        { "id": "h13", "author": "bagas", "text": "ya makanya kita butuh slot penuh", "time": "Kam 14:11", "read": true },
+        { "id": "h14", "author": "naya", "text": "gue baca jadwal finalnya, Exhibit B kita slot ketiga", "time": "Jum 21:30", "read": true },
+        { "id": "h15", "author": "bagas", "text": "slot ketiga? berarti kita nunggu dua tim dulu", "time": "Jum 21:32", "read": true },
+        { "id": "h16", "author": "naya", "text": "iya, makanya aku mau mount lebih pagi", "time": "Jum 21:33", "read": true },
+        { "id": "h17", "author": "bagas", "text": "oke. nanti aku kabarin pas mount selesai", "time": "Jum 21:34", "read": true }
+      ]
+    },
+    {
+      "id": "chat-dimas",
+      "contactId": "c-dimas",
+      "messages": [
+        { "id": "d1", "author": "dimas", "text": "bro file final Exhibit B mana", "time": "Sen 21:00", "read": true },
+        { "id": "d2", "author": "naya", "text": "udah di paling bawah folder", "time": "Sen 21:02", "read": true },
+        { "id": "d3", "author": "dimas", "text": "ya makanya rapihin foldernya, marine banget", "time": "Sen 21:03", "read": true },
+        { "id": "d4", "author": "dimas", "text": "btw cloud kita kuotanya sudah 95% nih", "time": "Rab 10:15", "read": true },
+        { "id": "d5", "author": "naya", "text": "berarti jangan upload yang video", "time": "Rab 10:20", "read": true },
+        { "id": "d6", "author": "dimas", "text": "sudah. makasih revenue", "time": "Rab 10:21", "read": true }
+      ]
+    },
+    {
+      "id": "chat-lala",
+      "contactId": "c-lala",
+      "messages": [
+        { "id": "l1", "author": "lala", "text": "Halo, proyeknya sudah masuk daftar final ya", "time": "Sen 09:00", "read": true },
+        { "id": "l2", "author": "naya", "text": "Siap, terima kasih Lala", "time": "Sen 09:12", "read": true },
+        { "id": "l3", "author": "lala", "text": "Ingat: mount exhibit paling lambat 15.00 besok", "time": "Jum 16:30", "read": true },
+        { "id": "l4", "author": "lala", "text": "Kalau ada kendala teknis, hubungi saya langsung ya", "time": "Jum 16:31", "read": false }
+      ]
+    },
+    {
+      "id": "chat-ibu",
+      "contactId": "c-ibu",
+      "messages": [
+        { "id": "i1", "author": "ibu", "text": "Sudah makan?", "time": "Sel 19:00", "read": true },
+        { "id": "i2", "author": "naya", "text": "udah Bu, baru pulang", "time": "Sel 19:40", "read": true },
+        { "id": "i3", "author": "ibu", "text": "Jangan terlalu lama di kampus", "time": "Sel 19:41", "read": true },
+        { "id": "i4", "author": "naya", "text": "iya Bu, exhibit ini selesai besok pagi kok", "time": "Sel 19:42", "read": true },
+        { "id": "i5", "author": "ibu", "text": "Besok pagi paginya berapa? jangan telat lagi ya", "time": "Jum 20:10", "read": false }
+      ]
+    },
+    {
+      "id": "chat-team",
+      "contactId": "c-dimas",
+      "title": "Ruang Pulang (tim)",
+      "messages": [
+        { "id": "tm1", "author": "dimas", "text": "hai semua, hari ini finalisasi Exhibit B ya", "time": "Sen 20:30", "read": true },
+        { "id": "tm2", "author": "bagas", "text": "siap", "time": "Sen 20:31", "read": true },
+        { "id": "tm3", "author": "naya", "text": "siap, aku handle fotonya", "time": "Sen 20:32", "read": true },
+        { "id": "tm4", "author": "lala", "text": "Pengingat: mount exhibit besok sebelum 15.00", "time": "Jum 16:00", "read": true },
+        { "id": "tm5", "author": "dimas", "text": "siap kapten", "time": "Jum 16:05", "read": true },
+        { "id": "tm6", "author": "bagas", "text": "besok pagi jangan lupa, project board jam 9", "time": "Jum 21:15", "read": true }
+      ]
+    }
+  ],
+  "scheduledMessages": [
+    {
+      "id": "sm-1",
+      "chatId": "chat-dimas",
+      "characterId": "dimas",
+      "text": "Naya, kalau Exhibit B belum ada sekarang mending buruan. Kuota cloud kita tinggal 3%",
+      "afterSeconds": 45,
+      "typingMs": 1400
+    },
+    {
+      "id": "sm-2",
+      "chatId": "chat-lala",
+      "characterId": "lala",
+      "text": "Satu lagi ya: kalau mount-nya molor, exhibit-nya dipindah ke slot berikutnya. Jadi tolong buruan.",
+      "afterSeconds": 120,
+      "typingMs": 1600
+    },
+    {
+      "id": "sm-3",
+      "chatId": "chat-bagas",
+      "characterId": "bagas",
+      "text": "kamu masih di kampus? gue ada di garasi",
+      "afterSeconds": 210,
+      "typingMs": 1300
+    }
+  ],
+  "calls": [
+    {
+      "id": "call-bagas-malam",
+      "direction": "incoming",
+      "contactId": "c-bagas",
+      "title": "Bagas, 23.12",
+      "timeoutSeconds": 30,
+      "connectDelaySeconds": 3,
+      "script": [
+        { "id": "cl-1", "speaker": "them", "text": "hey. masih bangun?", "delayMs": 2600 },
+        { "id": "cl-2", "speaker": "them", "text": "gue gabisa ngetik. mikirin itu tadi, soal file Exhibit B", "delayMs": 3000 },
+        { "id": "cl-3", "speaker": "me", "text": "iya, aku juga mikirin", "delayMs": 2600 },
+        { "id": "cl-4", "speaker": "them", "text": "belum ada yang tahu ya. besok pagi, project board, kita handle bareng", "delayMs": 3000 },
+        { "id": "cl-5", "speaker": "them", "text": "dan... makasih udah jawab. proyek ini penting buat gue", "delayMs": 3200 },
+        { "id": "cl-6", "speaker": "them", "text": "sampai besok. jangan begadang", "delayMs": 3000 }
+      ]
+    },
+    {
+      "id": "call-lala-sore",
+      "direction": "outgoing",
+      "contactId": "c-lala",
+      "title": "Lala Panitia",
+      "timeoutSeconds": 30,
+      "connectDelaySeconds": 2,
+      "script": [
+        { "id": "cl-l1", "speaker": "them", "text": "halo, gd geprek?", "delayMs": 2400 },
+        { "id": "cl-l2", "speaker": "them", "text": "kalau Exhibit B-nya sudah siap, tinggal taruh di meja 3 ya", "delayMs": 2800 }
+      ]
+    }
+  ],
+  "socialPosts": [
+    {
+      "id": "post-bagas-1",
+      "authorHandle": "bagaswir",
+      "authorName": "Bagas Wirawan",
+      "text": "Setahun lalu aku masih nulis hello world di buku catatan. Besok exhibit pertama kita dibuka di gd geprek. Masih terasa nyata.",
+      "time": "2 jam",
+      "likes": 41,
+      "replies": 6,
+      "reposts": 2,
+      "media": ["grad:#3b3f7a,#101224"]
+    },
+    {
+      "id": "post-dimas-1",
+      "authorHandle": "dimas_builds",
+      "authorName": "Dimas Prakoso",
+      "text": "Kuota cloud 95% dan aku masih harus upload 40 foto. Ini namanya alur kerja.",
+      "time": "4 jam",
+      "likes": 78,
+      "replies": 12,
+      "reposts": 4,
+      "media": []
+    },
+    {
+      "id": "post-lala-1",
+      "authorHandle": "lala.panitia",
+      "authorName": "Lala Puspita",
+      "text": "Pameran mahasiswa semester ganjil dibuka besok 19.00. 24 proyek, 1 gd geprek, 0 slot tersisa.",
+      "time": "6 jam",
+      "likes": 132,
+      "replies": 9,
+      "reposts": 21,
+      "media": []
+    },
+    {
+      "id": "post-naya-0",
+      "authorHandle": "nayaadira",
+      "authorName": "Naya Adira",
+      "text": "40 foto, satu lampu yang hampir mati, dan satu kursi untuk orang yang belum datang. Besok.",
+      "time": "8 jam",
+      "likes": 29,
+      "replies": 4,
+      "reposts": 1,
+      "media": [],
+      "isPlayer": true
+    },
+    {
+      "id": "post-bagas-2",
+      "authorHandle": "bagaswir",
+      "authorName": "Bagas Wirawan",
+      "text": "Slot exhibit kita cuma 40 menit. 40 menit itu cukup untuk 40 foto, atau untuk satu percakapan.",
+      "time": "1 jam",
+      "likes": 52,
+      "replies": 7,
+      "reposts": 3,
+      "media": []
+    }
+  ],
+  "emails": [
+    {
+      "id": "mail-1",
+      "from": "Panitia Pameran Semester Ganjil",
+      "fromAddress": "panitia@itn.ac.id",
+      "subject": "Jadwal final dan batas mount (21 Oktober)",
+      "body": "Selamat pagi,\n\nBerikut jadwal final exhibit hari ini. Exhibit B mendapat slot pukul 19.00-19.40 di Galeri GEDUNG.\n\nMount exhibit HARUS selesai sebelum pukul 15.00 hari ini.\n\nChecklist:\n1. Seluruh file foto sudah terunggah ke folder proposal.\n2. Label karya sudah dicetak dan diambil di meja panitia.\n3. Keyboard pemateri sudah dites.\n\nJika telat, slot akan diberikan ke proyek antrean berikutnya.\n\nSalam,\nLala Puspita\nPanitia Pameran",
+      "date": "21 Okt 06.45",
+      "unread": true
+    },
+    {
+      "id": "mail-2",
+      "from": "Perpustakaan ITN",
+      "fromAddress": "repo@itn.ac.id",
+      "subject": "Rekaman arsip: \"Ruang Pulang\"",
+      "body": "Halo,\n\nDokumentasi yang dikumpulkan pada Pameran 2025 sudah diarsipkan dan dapat diakses melalui portal repository.\n\nArsip ini mencakup foto, transkrip diskusi, dan rekap teknis yang dapat menjadi rujukan untuk exhibiting tahun ini.\n\nSalam,\nPerpustakaan",
+      "date": "18 Okt 11.02",
+      "unread": false
+    },
+    {
+      "id": "mail-3",
+      "from": "Bagas Wirawan",
+      "fromAddress": "bagas.w@student.itn.ac.id",
+      "subject": "soal file Exhibit B",
+      "body": "hai,\n\naku sempat mau nanya buat drive kamu. satu file aja: Exhibit B final.\n\nfile itu belum pernah aku upload ke server. hanya ada di laptopku.\n\nkalau ada yang nanya, aku ga mau kelihatan panik di grup. makasih.\n\n-b",
+      "date": "20 Okt 23.31",
+      "unread": true
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": "Shot list final",
+      "body": "40 foto, Exhibit B\n\n1. koridor gd geprek (11.20, lampu merah)\n2. tangga keluar (11.24)\n3. papan pengumuman (11.31)\n4. foto 5: lorong kosong - GANTI\n5. dua orang yang jalan tanpa tujuan\n6. label karya - JANGAN LUPIL print\n\nKalau thumbnail tidak muat, potong dari sisi kiri.",
+      "date": "20 Okt 22.10",
+      "pinned": true
+    },
+    {
+      "id": "note-2",
+      "title": "Rekaman, 21 Okt",
+      "body": "File Exhibit B tidak ada di server.\n\nYang aku tahu:\n- upload terakhir jam 2 pagi (bukan aku)\n- Bagas bilang dia yang handle\n- Dimas bilang dia ga nyentuh\n\nAku belum nanya siapa yang hapus. Mungkin belum perlu.\n\nExhibit dibuka jam 19.00. Aku harus memutuskan sebelum jam 15.00.",
+      "date": "21 Okt 07.05",
+      "pinned": false
+    },
+    {
+      "id": "note-3",
+      "title": "Ide pembuka",
+      "body": "Kalau boleh: buka dengan foto koridor, terus label karya dibaca dengan suara. Satu kursi kosong untuk orang yang belum datang.\n\nBuat Dimas? Dia bilang dia CAPE kalau harus bicara di depan.",
+      "date": "19 Okt 20.40",
+      "pinned": false
+    }
+  ],
+  "photos": [
+    {
+      "id": "ph-1",
+      "src": "grad:#4f5b8f,#151a2e",
+      "caption": "Koridor gd geprek, 11.20",
+      "album": "Ruang Pulang",
+      "date": "20 Okt",
+      "favorite": true
+    },
+    {
+      "id": "ph-2",
+      "src": "grad:#c96b4f,#2a1614",
+      "caption": "Papan pengumuman, lantai atas",
+      "album": "Ruang Pulang",
+      "date": "20 Okt",
+      "favorite": false
+    },
+    {
+      "id": "ph-3",
+      "src": "grad:#3f7f6b,#12241f",
+      "caption": "Tangga keluar, cahaya sore",
+      "album": "Ruang Pulang",
+      "date": "20 Okt",
+      "favorite": true
+    },
+    {
+      "id": "ph-4",
+      "src": "grad:#7a6bb5,#1c1830",
+      "caption": "Slideshow, pratinjau Exhibit B",
+      "album": "Exhibit B",
+      "date": "19 Okt",
+      "favorite": false
+    },
+    {
+      "id": "ph-5",
+      "src": "grad:#b58b4f,#2a2114",
+      "caption": "Label karya (cetak)",
+      "album": "Referensi",
+      "date": "20 Okt",
+      "favorite": false
+    },
+    {
+      "id": "ph-6",
+      "src": "grad:#4f7f9f,#111f2a",
+      "caption": "Ruang gd geprek, kosong",
+      "album": "Ruang Pulang",
+      "date": "18 Okt",
+      "favorite": false
+    }
+  ],
+  "articles": [
+    {
+      "id": "art-1",
+      "title": "Portal Pameran Semester Ganjil 2026",
+      "source": "portal.itn.ac.id",
+      "body": "Pameran mahasiswa semester ganjil akan dibuka pada 21 Oktober 2026 pukul 19.00 di Galeri GEDUNG.\n\nSebanyak 24 proyek terpilih dari empat fakultas mengikuti pameran ini. Setiap proyek memperoleh slot 40 menit untuk mount, dokumentasi, dan presentasi.\n\nPanitia mengingatkan: batas mount pukul 15.00 pada hari yang sama.",
+      "date": "19 Okt 2026",
+      "url": "about:blank"
+    },
+    {
+      "id": "art-2",
+      "title": "Arsip: \"Ruang Pulang\"",
+      "source": "repo.itn.ac.id",
+      "body": "Ruang Pulang adalah proyek mahasiswa DKV tahun 2025 yang mendokumentasikan kebiasaan kampus setelah jam operasional selesai.\n\nKurator mencatat: \"Yang membuat ruang kosong terasa hangat adalah orang yang tetap menyalakan lampunya.\"\n\nArsip ini mencakup 214 foto, 7 transkrip, dan rekap teknis yang dapat diakses oleh mahasiswa.",
+      "date": "18 Okt 2026",
+      "url": "about:blank"
+    },
+    {
+      "id": "art-3",
+      "title": "Panduan teknis mount exhibit",
+      "source": "panitia.itn.ac.id",
+      "body": "Checklist teknis: keyboard pemateri, adapter HDMI, label karya tercetak, dan salinan file pada dua media.\n\nPanitia sangat menyarankan setiap proyek menyimpan salinan lokal. Kuota cloud institusi sering dibatasi 5 GB per proyek.\n\nJika mount gagal, hubungi meja teknis pada hari yang sama.",
+      "date": "20 Okt 2026",
+      "url": "about:blank"
+    }
+  ],
+  "calendarEvents": [
+    {
+      "id": "cal-1",
+      "title": "Project board Ruang Pulang",
+      "date": "2026-10-21",
+      "time": "09.00",
+      "place": "Ruang Studio 3"
+    },
+    {
+      "id": "cal-2",
+      "title": "Mount exhibit (batas akhir)",
+      "date": "2026-10-21",
+      "time": "15.00",
+      "place": "Galeri GEDUNG"
+    },
+    {
+      "id": "cal-3",
+      "title": "Pembukaan pameran",
+      "date": "2026-10-21",
+      "time": "19.00",
+      "place": "Galeri GEDUNG"
+    },
+    {
+      "id": "cal-4",
+      "title": "Rapat panitia",
+      "date": "2026-10-20",
+      "time": "16.00",
+      "place": "Gd. Geprek"
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc-1",
+      "name": "Galeri GEDUNG",
+      "x": 500,
+      "y": 420,
+      "category": "kampus",
+      "description": "Ruang exhibit utama. Lampu track tinggi, dinding putih, kursi untuk 40 orang."
+    },
+    {
+      "id": "loc-2",
+      "name": "Gd. Geprek",
+      "x": 380,
+      "y": 300,
+      "category": "kampus",
+      "description": "Ruang panjang di belakang gedung. Tempat panitia dan gudang alat."
+    },
+    {
+      "id": "loc-3",
+      "name": "Studio 3",
+      "x": 620,
+      "y": 250,
+      "category": "studio",
+      "description": "Ruang kerja kelompok. Meja panjang, satu proyektor, dinding penuh pin."
+    },
+    {
+      "id": "loc-4",
+      "name": "Kopi Senja",
+      "x": 300,
+      "y": 620,
+      "category": "warung",
+      "description": "Warung kopi dekat gerbang. Tempat paling murah untuk duduk berdiskusi."
+    },
+    {
+      "id": "loc-5",
+      "name": "Taman Angka",
+      "x": 720,
+      "y": 760,
+      "category": "taman",
+      "description": "Halaman terbuka di belakang kampus. Langit luas, lorong teduh."
+    }
+  ],
+  "playlists": [
+    {
+      "id": "pl-1",
+      "title": "Mount Exhibit, 21 Okt",
+      "tracks": [
+        { "id": "tr-1", "title": "Countdown 40 Menit", "artist": "Kolektif Ruang Pulang", "seconds": 214 },
+        { "id": "tr-2", "title": "Drive D", "artist": "Kolektif Ruang Pulang", "seconds": 187 },
+        { "id": "tr-3", "title": "Koridor, 11.20", "artist": "Kolektif Ruang Pulang", "seconds": 241 },
+        { "id": "tr-4", "title": "Yang Tidak Dijawab", "artist": "Kolektif Ruang Pulang", "seconds": 198 }
+      ]
+    }
+  ],
+  "locales": {
+    "id": {},
+    "en": {
+      "project.title": "Last Signal",
+      "project.description": "Naya and Bagas are putting together a photography exhibition for their tiny campus. One file went missing, one call was left unanswered, and an opening night that must not fail.",
+      "character.naya.name": "Naya Adira",
+      "character.bagas.name": "Bagas Wirawan",
+      "character.dimas.name": "Dimas Prakoso",
+      "character.lala.name": "Lala Puspita",
+      "ending.ending-bersama.title": "The Empty Chair, Filled",
+      "ending.ending-archive.title": "An Archive Kept in Order",
+      "ending.ending-sendiri.title": "A Grade of One's Own",
+      "ending.ending-gugur.title": "The Exhibition That Folded",
+      "ending.ending-rahasia.title": "The Key on the Table"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "AU Studio — Phone-sim Interactive Fiction",
+  "short_name": "AU Studio",
+  "description": "Buat dan mainkan cerita interaktif di dalam simulasi smartphone.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07070c",
+  "theme_color": "#0b0b12",
+  "lang": "id",
+  "categories": ["entertainment", "books"],
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
